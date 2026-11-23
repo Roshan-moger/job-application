@@ -1,0 +1,83 @@
+# 🎯 Dynamic Interview Preparation Guide: Grabitts Softech Services Pvt.Ltd.
+### Role: .Net Developer (Immediate Joiner)
+**Candidate:** Roshan Moger (2.5+ Years Experience)
+**Target Location:** Delhi, India | **Required Level:** 2-4 Years (Associate / Mid)
+**Industry Domain:** Streaming Media
+**Domain Focus:** Adaptive bitrate streaming (HLS/MPEG-DASH), Core Web Vitals, video player telemetry (QoS/QoE), sub-second WebSockets, Shaka Player/Video.js, cross-device web platforms.
+
+---
+
+## 📊 1. Resume Alignment & Skill Match Analysis
+### ✅ Direct Matches from Your Resume:
+- **ASP.NET Core**: Production-proven from your work at ExcelSoft Technologies and full-stack projects.
+- **C#**: Production-proven from your work at ExcelSoft Technologies and full-stack projects.
+- **REST APIs**: Production-proven from your work at ExcelSoft Technologies and full-stack projects.
+
+### 🔍 Gaps & Areas to Brush Up Based on Your Resume:
+- **SQL Server**:
+  - *Your Resume Bridge:* Your strong full-stack foundations in React and C#/.NET Core allow fast ramp-up.
+  - *What to Review Before Interview:* Review standard industry best practices and core API/architectural patterns for SQL Server.
+
+---
+
+## 🚀 2. Tailored STAR Stories (Ready to Speak)
+### Redis Distributed Caching to Eliminate Latency (Grabitts Softech Services Pvt.Ltd. Application)
+- **Situation:** On ExcelSoft's assessment platforms, peak traffic caused heavy database read contention. For a high-throughput environment like Grabitts Softech Services Pvt.Ltd., database bottlenecks degrade user experience.
+- **Task:** Cut database round-trips by >60% and ensure sub-150ms API responses under concurrent user load.
+- **Action:** Designed a Redis distributed caching layer in ASP.NET Core with TTL policies and reactive cache invalidation. Engineered cache-aside patterns with fallback to relational queries.
+- **Result:** Reduced direct database hits significantly and maintained 99.9% uptime during peak concurrent activity.
+> 💡 **Winning Pitch Line:** 'At ExcelSoft, I engineered Redis caching to handle massive concurrent traffic spikes, which directly translates to Grabitts Softech Services Pvt.Ltd.'s requirement for scalable, low-latency services.'
+
+### Sub-Second Live Data Streaming with WebSockets (Grabitts Softech Services Pvt.Ltd. Focus)
+- **Situation:** Online platforms require real-time updates without the network overhead and delay of recurring HTTP polling.
+- **Task:** Build a responsive bi-directional event stream between React frontends and backend services.
+- **Action:** Implemented WebSocket connection managers with exponential backoff auto-reconnect, custom React hooks (`useWebSocket`), and heartbeat ping/pong monitoring.
+- **Result:** Achieved sub-second alert broadcasts while eliminating thousands of redundant polling requests.
+> 💡 **Winning Pitch Line:** 'My experience building real-time WebSocket pipelines allows me to implement instant, reliable user interactions for Grabitts Softech Services Pvt.Ltd.'s digital products.'
+
+### JWT Token Rotation & Route-Level RBAC (Grabitts Softech Services Pvt.Ltd. Standard)
+- **Situation:** Multi-role enterprise platforms require strict authorization boundaries without degrading user session fluidity.
+- **Task:** Develop an end-to-end security pipeline bridging ASP.NET Core / Node.js with React route protection.
+- **Action:** Configured short-lived JWT access tokens with secure HTTP-only refresh tokens, Axios interceptors for silent refresh on 401s, and React Higher-Order Components checking role claims.
+- **Result:** Prevented unauthorized data access while ensuring zero unexpected session expirations for active users.
+> 💡 **Winning Pitch Line:** 'I design secure, enterprise-grade authentication and RBAC systems that protect sensitive data while maintaining smooth user sessions at Grabitts Softech Services Pvt.Ltd..'
+
+### MCP Server in .NET & Gemini LLM Chatbot (Grabitts Softech Services Pvt.Ltd. Application)
+- **Situation:** Enterprise platforms need to bridge internal SaaS workflows and proprietary data with Generative AI systems without compromising security boundaries.
+- **Task:** Expose SaaS platform data and workflows to AI agents and build an in-product conversational assistant using Google Gemini via AWS Bedrock.
+- **Action:** Designed and implemented an MCP server using .NET to standardize SaaS capabilities into agentic tools. Integrated Google Gemini (via AWS Bedrock) alongside internal AI models with strict prompt guardrails and streaming telemetry.
+- **Result:** Enabled conversational querying across assessment and compliance modules, dramatically streamlining reporting workflows.
+> 💡 **Winning Pitch Line:** 'At ExcelSoft, I engineered an MCP server in .NET and integrated Google Gemini via AWS Bedrock, bringing cutting-edge agentic AI into production for Grabitts Softech Services Pvt.Ltd..'
+
+---
+
+## 💻 3. High-Probability Technical Questions & Answers
+### Q1: How do you optimize Core Web Vitals and startup latency for heavy media streaming web apps?
+**Model Answer (2+ Years Perspective):**
+> Preconnect to media CDNs, load player SDKs dynamically, defer non-critical analytics until player state reaches 'playing', and use Service Workers to cache manifest chunks and static UI assets. Ensure initial bundle is minimal by lazy-loading player controls and modal overlays.
+
+### Q2: How do you design a real-time playback telemetry pipeline without hurting UI rendering?
+**Model Answer (2+ Years Perspective):**
+> Collect metrics (buffer health, bitrate switches, dropped frames, startup time) via HTML5 video events into a lightweight memory buffer. Flush events in micro-batches using `navigator.sendBeacon` or a dedicated WebSocket channel on a Web Worker thread to keep the React UI main thread at 60 FPS.
+
+### Q3: How do you handle live proctoring or live multi-stream synchronization in React?
+**Model Answer (2+ Years Perspective):**
+> Use WebRTC / WebSocket channels for low-latency video feed signalling, maintain audio-video synchronization using presentation timestamps (PTS), and gracefully degrade quality on network drops using adaptive bitrate triggers.
+
+---
+
+## 🏗️ 4. System Design & Architectural Challenge
+**Challenge:** Design a Scalable Video Playback & Real-Time Telemetry Tracking Pipeline.
+- **How to structure your solution:**
+  1. Clarify functional and non-functional requirements (throughput, availability, latency).
+  2. Outline API endpoints and data contracts (REST/WebSockets).
+  3. Design storage tier: Primary SQL/NoSQL DB + Redis caching layer for hot reads.
+  4. Address failure modes: Retries with exponential backoff, circuit breakers, and rate limiting.
+
+---
+
+## 🙋 5. Reverse Interview Questions (Ask the Interviewer)
+- *"What does the engineering architecture look like at Grabitts Softech Services Pvt.Ltd. for this team, and how are frontend and backend responsibilities coordinated?"*
+- *"How does Grabitts Softech Services Pvt.Ltd. approach testing and continuous deployment (CI/CD) for production releases?"*
+- *"What is the biggest technical challenge or scaling goal this team is looking to solve over the next 6 months?"*
+- *"What does career growth and mentorship look like for an engineer with 2+ years of experience coming into Grabitts Softech Services Pvt.Ltd.?"*

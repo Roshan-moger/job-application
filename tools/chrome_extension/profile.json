@@ -1,0 +1,65 @@
+{
+  "name": "Roshan Moger",
+  "email": "roshanmoger502@gmail.com",
+  "phone": "+91-8970035508",
+  "location": "Mysore, Karnataka, India",
+  "preferredLocation": "Bengaluru / Mysore / Remote",
+  "experienceYears": "2.5+",
+  "headline": "Full Stack Developer (2.5+ Yrs) | React.js | TypeScript | ASP.NET Core | C# | AWS | MCP | Generative AI",
+  "summary": "Full Stack Developer with 2.5+ years of experience engineering scalable web applications and enterprise platforms using React.js, TypeScript, ASP.NET Core, C#, and REST APIs. Experienced in Model Context Protocol (MCP) and integrating LLMs (Google Gemini via AWS Bedrock). Skilled in JWT authentication, Redis caching, WebSockets, Docker, Kubernetes, and AWS.",
+  "links": {
+    "linkedin": "https://linkedin.com/in/roshan-moger",
+    "github": "https://github.com/Roshan-moger",
+    "portfolio": "https://roshan-devhub.netlify.app"
+  },
+  "skills": {
+    "frontend": ["React.js", "TypeScript", "JavaScript", "Redux", "React Router", "Tailwind CSS", "Bootstrap", "HTML5", "CSS3"],
+    "backend": ["ASP.NET Core", "C#", "Node.js", "Express.js", "REST APIs", "WebSockets", "JWT Authentication"],
+    "ai_llm": ["Model Context Protocol (MCP)", "AWS Bedrock", "Google Gemini"],
+    "cloud_devops": ["AWS (EC2, IAM, S3, RDS, Lambda, CloudWatch)", "Docker", "Kubernetes", "GitHub Actions", "Git"],
+    "databases": ["Redis", "PostgreSQL", "MongoDB", "SQL Server"]
+  },
+  "experience": [
+    {
+      "company": "ExcelSoft Technologies",
+      "role": "Associate Software Engineer",
+      "location": "Mysore, India",
+      "period": "May 2024 - Present",
+      "highlights": [
+        "Developed end-to-end features across React.js/TypeScript SPAs and ASP.NET Core/C# REST APIs for enterprise EdTech platforms.",
+        "Designed and built a Model Context Protocol (MCP) server using .NET to expose SaaS workflows to AI systems, and built an in-product chatbot with Google Gemini (via AWS Bedrock).",
+        "Contributed to Saras Standard Platform, SVKM Platform, and OwlBot for assessment delivery and copyright-compliance reporting.",
+        "Implemented secure JWT authentication with refresh tokens, session persistence, protected routes, and RBAC.",
+        "Implemented Redis caching to reduce unnecessary database queries during peak assessment loads.",
+        "Deployed and managed Dockerized services on AWS using Kubernetes, EC2, IAM, S3, RDS, Lambda, and CloudWatch."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Engineering (B.E.) in Electrical & Electronics Engineering",
+      "institution": "NIE Institute of Technology, Mysore",
+      "period": "2019 - 2023",
+      "gpa": "7.8 / 10.0"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Java Full-Stack Development Certification",
+      "issuer": "Kodnest Technologies Pvt. Ltd.",
+      "period": "Aug 2023 - Apr 2024"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Real-Time Expense Tracker",
+      "tech": "React.js, TypeScript, Redux, Node.js, Express.js, MongoDB",
+      "summary": "Full-stack personal finance application with JWT auth, dynamic budgeting, and data visualizations."
+    },
+    {
+      "title": "Event Management System",
+      "tech": "React.js, TypeScript, WebSockets, REST APIs",
+      "summary": "Multi-role platform with real-time ticket booking and QR-based verification over WebSockets."
+    }
+  ]
+}

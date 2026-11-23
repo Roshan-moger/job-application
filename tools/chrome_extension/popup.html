@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Job Auto-Apply</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <div class="logo-icon">⚡</div>
+        <div>
+          <div class="app-title">AI Job Auto-Apply</div>
+          <div class="app-sub">Roshan Moger &bull; 2.5+ Yrs Full Stack</div>
+        </div>
+      </div>
+      <span class="status-badge">Active</span>
+    </header>
+
+    <!-- Main 1-Click Action -->
+    <section class="action-section">
+      <button id="btnPopupAutoFill" class="btn-main-fill">
+        <span class="btn-icon">⚡</span>
+        <span>Auto-Fill Current Application</span>
+      </button>
+
+      <button id="btnPopupCopyCover" class="btn-secondary-action">
+        <span class="btn-icon">📝</span>
+        <span>Copy AI-Tailored Cover Letter</span>
+      </button>
+    </section>
+
+    <!-- Status Feedback -->
+    <div id="popupStatus" class="status-box">
+      Ready to auto-fill form fields on active page.
+    </div>
+
+    <!-- Quick Copy Candidate Hub -->
+    <section class="section">
+      <div class="section-title">📋 1-Click Quick Copy</div>
+      <div class="quick-copy-grid">
+        <button class="copy-item" id="btnCopyPhone" data-val="+918970035508">
+          <span class="copy-label">Phone</span>
+          <span class="copy-val">+91-8970035508</span>
+        </button>
+        <button class="copy-item" id="btnCopyEmail" data-val="roshanmoger502@gmail.com">
+          <span class="copy-label">Email</span>
+          <span class="copy-val">roshanmoger502...</span>
+        </button>
+        <button class="copy-item" id="btnCopyPortfolio" data-val="https://roshan-devhub.netlify.app">
+          <span class="copy-label">Portfolio</span>
+          <span class="copy-val">roshan-devhub...</span>
+        </button>
+        <button class="copy-item" id="btnCopyLinkedIn" data-val="https://linkedin.com/in/roshan-moger">
+          <span class="copy-label">LinkedIn</span>
+          <span class="copy-val">linkedin.com/in/...</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Profile Snapshot -->
+    <section class="section profile-snapshot">
+      <div class="section-title">🔍 Verified Profile Parameters</div>
+      <div class="snapshot-row">
+        <span>Experience:</span>
+        <strong>2.5+ Years</strong>
+      </div>
+      <div class="snapshot-row">
+        <span>Current Role:</span>
+        <strong>Assoc. Software Engineer (ExcelSoft)</strong>
+      </div>
+      <div class="snapshot-row">
+        <span>Notice Period:</span>
+        <strong>15 - 30 Days</strong>
+      </div>
+      <div class="snapshot-row">
+        <span>AI Stack:</span>
+        <strong style="color: #38bdf8;">MCP &bull; Bedrock &bull; Gemini</strong>
+      </div>
+    </section>
+
+    <!-- Bottom Dashboard Launcher -->
+    <footer class="footer">
+      <button id="btnOpenDashboard" class="btn-dashboard-link">
+        📊 Open Multi-Portal Dashboard (localhost:5000) ↗
+      </button>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

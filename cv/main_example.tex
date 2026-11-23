@@ -1,0 +1,140 @@
+%% Example CV - Roshan Moger
+%% Comprehensive master reference updated with 2.5+ years experience,
+%% Model Context Protocol (MCP), AWS Bedrock, and Google Gemini integration.
+%%
+%% Compile with: lualatex main_example.tex
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\renewcommand*{\namefont}{\fontsize{34}{36}\bfseries\upshape}
+\colorlet{firstnamecolor}{color1}
+\colorlet{lastnamecolor}{color1}
+\colorlet{namecolor}{color1}
+\renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
+
+\usepackage[utf8]{inputenc}
+\AtEndPreamble{\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Roshan Moger - Full Stack Developer CV},
+    pdfpagemode=UseNone,
+}}
+\usepackage[scale=0.80]{geometry}
+\usepackage{import}
+\usepackage{needspace}
+
+% personal data
+\name{Roshan}{Moger}
+\address{Mysore, Karnataka, India}{}{}
+\phone[mobile]{+91-8970035508}
+\email{roshanmoger502@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/roshan-moger}{LinkedIn}, \href{https://github.com/Roshan-moger}{GitHub}, \href{https://roshan-devhub.netlify.app}{roshan-devhub.netlify.app}}
+
+\begin{document}
+
+\makecvtitle
+
+% ============================================================
+%     PROFILE STATEMENT
+% ============================================================
+
+\vspace{6pt}
+\small{Full Stack Developer with 2.5+ years of experience building enterprise web applications using React.js, TypeScript, ASP.NET Core, C\#, and REST APIs. Skilled in authentication and authorization, Redux state management, Redis caching, WebSockets, AWS infrastructure, Docker, Kubernetes, and CI/CD workflows. Experienced in Model Context Protocol (MCP) and integrating LLMs (Google Gemini via AWS Bedrock). Delivered features for EdTech, university examination, compliance, and event-management platforms.}
+
+% ============================================================
+%     CORE COMPETENCIES / TECHNICAL SKILLS
+% ============================================================
+
+\section{Technical Skills}
+\vspace{1pt}
+\begin{itemize}
+
+\item \textbf{Frontend}: React.js, TypeScript, JavaScript, Redux, React Router, Tailwind CSS, Bootstrap, HTML5, CSS3.
+
+\item \textbf{Backend}: ASP.NET Core, C\#, Node.js, Express.js, REST APIs, WebSockets, JWT Authentication.
+
+\item \textbf{Cloud \& DevOps}: AWS (EC2, IAM, S3, RDS, Lambda, CloudWatch), Docker, Kubernetes, GitHub Actions, Git.
+
+\item \textbf{Data \& Caching}: Redis, PostgreSQL, MongoDB.
+
+\item \textbf{AI/LLM Integration}: Model Context Protocol (MCP), AWS Bedrock, Google Gemini.
+
+\item \textbf{Tools}: GitHub, Postman, Jira, VS Code.
+
+\end{itemize}
+
+% ============================================================
+%     PROFESSIONAL EXPERIENCE
+% ============================================================
+
+\section{Experience}
+\vspace{3pt}
+\begin{itemize}
+
+% --- ExcelSoft Technologies ---
+\item{\cventry{May 2024--Present}{Associate Software Engineer}{ExcelSoft Technologies}{Mysore, India}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Developed end-to-end features across React.js/TypeScript single-page applications and ASP.NET Core/C\# REST APIs for enterprise EdTech and compliance platforms.}
+    \item {Designed and built a Model Context Protocol (MCP) server using .NET to expose the SaaS platform's data and workflows to AI systems, and developed an in-product chatbot integrating Google Gemini (via AWS Bedrock) alongside the company's private AI model.}
+    \item {Contributed to Saras Standard Platform, SVKM Platform, and OwlBot, supporting assessment creation, scheduling, secure test delivery, reporting, answer-sheet workflows, and copyright-compliance reporting.}
+    \item {Implemented JWT authentication with refresh tokens, session persistence, protected routes, and role-based access control.}
+    \item {Built reusable React components, custom hooks, and higher-order components for common UI, authorization, and API-integration requirements.}
+    \item {Implemented Redis caching to reduce unnecessary database queries in high-traffic assessment modules.}
+    \item {Deployed and managed Dockerized services using Kubernetes and AWS services including EC2, IAM, S3, RDS, Lambda, and CloudWatch.}
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     PROJECTS
+% ============================================================
+
+\section{Projects}
+\vspace{1pt}
+\begin{itemize}
+
+\item{\cventry{2025}{Real-Time Expense Tracker}{MERN Stack}{}{}{\vspace{1pt}
+Built a full-stack application for managing monthly income and expenses using React.js, TypeScript, Redux, Node.js, Express.js, and MongoDB. Implemented JWT authentication, route guards, session persistence, REST APIs, and designed optimized query patterns for expense and user-data operations.
+}}
+
+\vspace{3pt}
+
+\item{\cventry{2025}{Event Management System}{React.js, TypeScript, WebSockets}{}{}{\vspace{1pt}
+Created role-based user flows for Admin, Organizer, and Customer users. Developed event creation, ticket booking, ticket generation, and QR-based check-in features. Maintained the project using Git and GitHub with a component-driven React architecture.
+}}
+
+\end{itemize}
+
+% ============================================================
+%     EDUCATION
+% ============================================================
+
+\section{Education}
+\vspace{1pt}
+\begin{itemize}
+
+\item{\cventry{2019--2023}{Bachelor of Engineering -- Electrical \& Electronics Engineering}{NIE Institute of Technology}{Mysore, India}{}{\vspace{1pt}
+GPA: 7.8 / 10.0. Core foundation in software engineering, data structures, and computer programming.
+}}
+
+\end{itemize}
+
+% ============================================================
+%     CERTIFICATIONS
+% ============================================================
+
+\section{Certifications}
+\vspace{1pt}
+\begin{itemize}
+
+\item{\cventry{Aug 2023--Apr 2024}{Java Full-Stack Development Certification}{Kodnest Technologies Pvt. Ltd.}{Bengaluru, India}{}{\vspace{1pt}
+Comprehensive training in full-stack application development, database design, and RESTful service engineering.
+}}
+
+\end{itemize}
+
+\end{document}
